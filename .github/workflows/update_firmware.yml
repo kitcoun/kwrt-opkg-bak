@@ -2,7 +2,7 @@ name: Update OpenWrt Firmware
 
 on:
   schedule:
-    - cron: '0 1 * * 1'  # 每周一 UTC 1:00 运行 (对应北京时间周一 9:00)
+    - cron: '0 1,13 * * *'  # 每天 UTC 1:00 和 13:00 运行 (对应北京时间 9:00 和 21:00)
   workflow_dispatch:  # 允许手动触发
 
 jobs:
